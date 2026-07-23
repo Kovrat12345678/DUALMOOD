@@ -572,7 +572,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         body: JSON.stringify(orderData)
       })
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error("PHP backend not available");
+        return res.json();
+      })
       .then(res => {
         if (submitBtn) {
           submitBtn.disabled = false;
@@ -585,16 +588,36 @@ document.addEventListener('DOMContentLoaded', () => {
         checkoutForm.reset();
       })
       .catch(err => {
-        console.error(err);
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'RENDELÉS ELKÜLDÉSE';
-        }
-        // Fallback for direct file:// or local environment issues
-        switchCartStep('success');
-        cartItems = [];
-        updateCart();
-        checkoutForm.reset();
+        console.warn("PHP backend failed or not available, using direct FormSubmit API...", err);
+        
+        const emailPayload = {
+          "Name": orderData.customer_name,
+          "Email": orderData.customer_email,
+          "Phone": orderData.customer_phone,
+          "Address": `${orderData.customer_zip} ${orderData.customer_city}, ${orderData.customer_address}`,
+          "Products": orderData.cart_items.map(i => `${i.name} (Méret: ${i.size})`).join(', '),
+          "Total Value": `${orderData.total_price.toLocaleString('hu-HU')} Ft`,
+          "_subject": "Új DUALMOOD Rendelés (GitHub Pages) - " + orderData.customer_name
+        };
+
+        fetch('https://formsubmit.co/ajax/byekovrat@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(emailPayload)
+        })
+        .finally(() => {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'RENDELÉS ELKÜLDÉSE';
+          }
+          switchCartStep('success');
+          cartItems = [];
+          updateCart();
+          checkoutForm.reset();
+        });
       });
     });
   }
