@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="DUALMOOD — Magyar streetwear márka. Limitált szériás, prémium minőségű utcai ruházat. Fedezd fel a kettős hangulatot.">
+  <meta name="keywords" content="DUALMOOD, streetwear, magyar, ruhamárka, limitált, utcai divat, pólók">
+  <meta property="og:title" content="DUALMOOD — Express Your Dual Mood">
+  <meta property="og:description" content="Magyar streetwear márka. Limitált szériás, prémium minőségű utcai ruházat.">
+  <meta property="og:image" content="uj logo/image0 (11).png">
+  <meta property="og:type" content="website">
+  <title>DUALMOOD — Express Your Dual Mood</title>
+  <link rel="icon" type="image/png" href="uj logo/image0 (11).png">
+  <link rel="stylesheet" href="style.css?v=25">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <img src="uj logo/image0 (11).png" alt="DUALMOOD" class="loading-screen__logo">
+  </div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-bar__inner">
+      <span>🔥 ÚJ DROP HAMAROSAN</span>
+      <span class="announcement-bar__divider"></span>
+      <span>INGYENES SZÁLLÍTÁS 15.000 FT FELETT</span>
+      <span class="announcement-bar__divider"></span>
+      <span>LIMITÁLT DARABSZÁM</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo" id="logoLink">
+        <img src="uj logo/image0 (11).png" alt="DUALMOOD Logo">
+        <span class="header__logo-text">DUALMO®D</span>
+      </a>
+
+      <nav class="header__nav">
+        <a href="#" class="header__nav-link active" data-page="home">Főoldal</a>
+        <a href="#" class="header__nav-link" data-page="shop">Shop</a>
+        <a href="#" class="header__nav-link" data-page="about">Rólunk</a>
+        <a href="#" class="header__nav-link" data-page="contact">Kontakt</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Search -->
+        <button class="header__action-btn" id="searchBtn" aria-label="Keresés">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <!-- Cart -->
+        <button class="header__action-btn" id="cartBtn" aria-label="Kosár">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="header__cart-count" id="cartCount">0</span>
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="header__menu-toggle" id="menuToggle" aria-label="Menü">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" class="mobile-menu__link" data-page="home">Főoldal</a>
+    <a href="#" class="mobile-menu__link" data-page="shop">Shop</a>
+    <a href="#" class="mobile-menu__link" data-page="about">Rólunk</a>
+    <a href="#" class="mobile-menu__link" data-page="contact">Kontakt</a>
+    <div class="mobile-menu__socials">
+      <a href="https://instagram.com/dualmood" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/@dualmood" target="_blank">TikTok</a>
+    </div>
+  </div>
+
+  <!-- ================================ -->
+  <!-- HOME PAGE -->
+  <!-- ================================ -->
+  <main class="page active" id="page-home">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <img src="uj logo/image0 (11).png" alt="" class="hero__bg-image">
+      </div>
+      <div class="hero__content">
+        <img src="uj logo/image0 (11).png" alt="DUALMOOD" class="hero__logo-icon">
+        <h1 class="hero__title">DUAL<br>MO®D</h1>
+        <p class="hero__subtitle">Express your dual mood — Streetwear with attitude</p>
+        <a href="#" class="hero__cta" data-page="shop">
+          SHOP NOW
+          <span class="hero__cta-arrow">→</span>
+        </a>
+      </div>
+      <div class="hero__scroll-indicator">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <span class="marquee__item">LIMITÁLT SZÉRIÁK <span class="marquee__dot"></span></span>
+        <span class="marquee__item">PRÉMIUM MINŐSÉG <span class="marquee__dot"></span></span>
+        <span class="marquee__item">STREETWEAR ATTITŰD <span class="marquee__dot"></span></span>
+        <span class="marquee__item">DUAL MOOD <span class="marquee__dot"></span></span>
+        <span class="marquee__item">ANGRY & HAPPY <span class="marquee__dot"></span></span>
+        <span class="marquee__item">MADE IN HUNGARY <span class="marquee__dot"></span></span>
+        <!-- Duplicate for seamless scroll -->
+        <span class="marquee__item">LIMITÁLT SZÉRIÁK <span class="marquee__dot"></span></span>
+        <span class="marquee__item">PRÉMIUM MINŐSÉG <span class="marquee__dot"></span></span>
+        <span class="marquee__item">STREETWEAR ATTITŰD <span class="marquee__dot"></span></span>
+        <span class="marquee__item">DUAL MOOD <span class="marquee__dot"></span></span>
+        <span class="marquee__item">ANGRY & HAPPY <span class="marquee__dot"></span></span>
+        <span class="marquee__item">MADE IN HUNGARY <span class="marquee__dot"></span></span>
+      </div>
+    </div>
+
+    <!-- Products Section (Aktuális Drop: 3 items) -->
+    <section class="section products" id="products-section">
+      <div class="section__header reveal">
+        <p class="section__label">Kollekció</p>
+        <h2 class="section__title">Aktuális Drop</h2>
+        <p class="section__subtitle">Limitált darabszám — ha elfogyott, elfogyott.</p>
+      </div>
+      <div class="products__grid products__grid--scroll">
+        <!-- Item 1: DUALMOOD TRACKSET -->
+        <div class="product-card reveal reveal-delay-1" data-product="dualmood-trackset">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image0 (5).jpeg" alt="DUALMOOD TRACKSET" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">DUALMOOD TRACKSET</h3>
+            <p class="product-card__price">17 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: HAPPYMOOD BRONZE -->
+        <div class="product-card reveal reveal-delay-2" data-product="happymood-bronze">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image1 (2).jpeg" alt="HAPPYMOOD BRONZE" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">HAPPYMOOD BRONZE</h3>
+            <p class="product-card__price">12 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: DUALMOOD SHORTS -->
+        <div class="product-card reveal reveal-delay-3" data-product="dualmood-shorts">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image2 (3).jpeg" alt="DUALMOOD SHORTS" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">DUALMOOD SHORTS</h3>
+            <p class="product-card__price">10 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section class="section brand-story" id="brand-story">
+      <div class="brand-story__inner">
+        <div class="brand-story__visual reveal">
+          <img src="uj logo/image0 (11).png" alt="DUALMOOD Brand" class="brand-story__image">
+        </div>
+        <div class="brand-story__content reveal reveal-delay-1">
+          <p class="brand-story__label">A Márka</p>
+          <h2 class="brand-story__title">Két Hangulat.<br>Egy Stílus.</h2>
+          <p class="brand-story__text">
+            A DUALMOOD nem csak egy ruhamárka — egy érzés. Mindannyiunkban ott él két oldal: 
+            a dühös és a boldog, a sötét és a világos. Mi ezt a kettősséget öntjük formába 
+            prémium minőségű streetwear darabokkal.
+          </p>
+          <p class="brand-story__text">
+            Minden darab limitált szériában készül, mert hiszünk abban, hogy az egyediség 
+            nem tömeggyártásból születik. Magyar tervezés, prémium alapanyagok, utcai attitűd.
+          </p>
+          <a href="#" class="brand-story__link" data-page="about">
+            TUDJ MEG TÖBBET →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Marquee -->
+    <section class="marquee">
+      <div class="marquee__track">
+        <span class="marquee__item">DUAL MOOD <span class="marquee__dot"></span></span>
+        <span class="marquee__item">EXPRESS YOURSELF <span class="marquee__dot"></span></span>
+        <span class="marquee__item">LIMITÁLT DROP <span class="marquee__dot"></span></span>
+        <span class="marquee__item">PREMIUM QUALITY <span class="marquee__dot"></span></span>
+        <span class="marquee__item">DUAL MOOD <span class="marquee__dot"></span></span>
+        <span class="marquee__item">EXPRESS YOURSELF <span class="marquee__dot"></span></span>
+        <span class="marquee__item">LIMITÁLT DROP <span class="marquee__dot"></span></span>
+        <span class="marquee__item">PREMIUM QUALITY <span class="marquee__dot"></span></span>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter" id="newsletter">
+      <div class="newsletter__container reveal">
+        <p class="section__label">Legyél első</p>
+        <h2 class="section__title">Ne maradj le a dropokról</h2>
+        <p class="section__subtitle">Iratkozz fel és értesülj elsőként az új kollekciókról és exkluzív ajánlatokról.</p>
+        <form class="newsletter__form" id="newsletterForm">
+          <input type="email" class="newsletter__input" id="newsletterEmail" placeholder="Email címed" required>
+          <button type="submit" class="newsletter__btn">Feliratkozás</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq">
+      <div class="section__header reveal">
+        <p class="section__label">Kérdések</p>
+        <h2 class="section__title">Gyakori Kérdések</h2>
+      </div>
+      <div class="faq__container">
+        <div class="faq__item reveal reveal-delay-1">
+          <button class="faq__question">
+            Milyen méreteket kínáltok?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p class="faq__answer-text">Termékeink S, M, L és XL méretben érhetők el. Oversized szabásúak, ezért ha bizonytalan vagy, válaszd az eggyel kisebb méretet a szokásosnál.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal reveal-delay-2">
+          <button class="faq__question">
+            Mennyi a szállítási idő?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p class="faq__answer-text">A rendelés leadása után 2-4 munkanapon belül kézbesítjük a csomagod. Budapesten belül akár másnapi átvétel is lehetséges.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal reveal-delay-3">
+          <button class="faq__question">
+            Van lehetőség cserére vagy visszaküldésre?
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p class="faq__answer-text">Igen, a kézhezvételtől számított 14 napon belül lehetőség van méretcserére vagy visszaküldésre. A terméknek eredeti állapotban, címkével kell visszaérkeznie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================ -->
+  <!-- SHOP PAGE -->
+  <!-- ================================ -->
+  <main class="page" id="page-shop">
+    <section class="section products">
+      <div class="section__header">
+        <p class="section__label">Összes termék</p>
+        <h2 class="section__title">Shop</h2>
+        <p class="section__subtitle">Böngéssz az aktuális kollekciónkban</p>
+      </div>
+
+      <!-- Shop Category Filters -->
+      <div class="shop__filters">
+        <button class="shop__filter-btn active" data-filter="all">Összes</button>
+        <button class="shop__filter-btn" data-filter="drop">Új Drop</button>
+        <button class="shop__filter-btn" data-filter="polok">Pólók</button>
+        <button class="shop__filter-btn" data-filter="szett">Szettek & Shorts</button>
+      </div>
+
+      <!-- Countdown Banner -->
+      <div class="countdown-banner">
+        <p class="countdown-banner__label">KÖVETKEZŐ DROPIG HÁTRALÉVŐ IDŐ</p>
+        <div class="countdown-banner__timer" id="countdownTimer">
+          <div class="countdown-banner__unit">
+            <span class="countdown-banner__num" id="cdDays">00</span>
+            <span class="countdown-banner__name">Nap</span>
+          </div>
+          <span class="countdown-banner__colon">:</span>
+          <div class="countdown-banner__unit">
+            <span class="countdown-banner__num" id="cdHours">00</span>
+            <span class="countdown-banner__name">Óra</span>
+          </div>
+          <span class="countdown-banner__colon">:</span>
+          <div class="countdown-banner__unit">
+            <span class="countdown-banner__num" id="cdMinutes">00</span>
+            <span class="countdown-banner__name">Perc</span>
+          </div>
+          <span class="countdown-banner__colon">:</span>
+          <div class="countdown-banner__unit">
+            <span class="countdown-banner__num" id="cdSeconds">00</span>
+            <span class="countdown-banner__name">Másodperc</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="products__grid">
+        <!-- Card 1: DUALMOOD TRACKSET -->
+        <div class="product-card" data-product="dualmood-trackset" data-category="szett drop">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image0 (5).jpeg" alt="DUALMOOD TRACKSET" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">DUALMOOD TRACKSET</h3>
+            <p class="product-card__price">17 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: HAPPYMOOD BRONZE -->
+        <div class="product-card" data-product="happymood-bronze" data-category="polok drop">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image1 (2).jpeg" alt="HAPPYMOOD BRONZE" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">HAPPYMOOD BRONZE</h3>
+            <p class="product-card__price">12 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: DUALMOOD SHORTS -->
+        <div class="product-card" data-product="dualmood-shorts" data-category="szett drop">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image2 (3).jpeg" alt="DUALMOOD SHORTS" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">DUALMOOD SHORTS</h3>
+            <p class="product-card__price">10 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: ANGRYMOOD Polo -->
+        <div class="product-card" data-product="angrymood-polo" data-category="polok">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image5 (1).jpeg" alt="ANGRYMOOD Polo" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">ANGRYMOOD Polo</h3>
+            <p class="product-card__price">12 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: ANGRYMOOD -->
+        <div class="product-card" data-product="angrymood-tee" data-category="polok">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image4 (1).jpeg" alt="ANGRYMOOD" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">ANGRYMOOD</h3>
+            <p class="product-card__price">12 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: HAPPYMOOD -->
+        <div class="product-card" data-product="happymood-tee" data-category="polok">
+          <div class="product-card__image-wrapper">
+            <img src="fehér ruha háttér/image3 (1).jpeg" alt="HAPPYMOOD" class="product-card__image">
+            <div class="product-card__overlay">
+              <button class="product-card__quick-view">RÉSZLETEK</button>
+            </div>
+            <span class="product-card__badge">ÚJ</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">HAPPYMOOD</h3>
+            <p class="product-card__price">12 990 Ft</p>
+            <div class="product-card__sizes">
+              <span class="product-card__size">S</span>
+              <span class="product-card__size">M</span>
+              <span class="product-card__size">L</span>
+              <span class="product-card__size">XL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================ -->
+  <!-- PRODUCT DETAIL PAGE -->
+  <!-- ================================ -->
+  <main class="page" id="page-product">
+    <div class="product-detail" id="productDetail">
+      <!-- Will be populated by JS -->
+    </div>
+  </main>
+
+  <!-- ================================ -->
+  <!-- ABOUT PAGE -->
+  <!-- ================================ -->
+  <main class="page" id="page-about">
+    <section class="section brand-story">
+      <div class="brand-story__inner">
+        <div class="brand-story__visual">
+          <img src="logo uj/image0 (9).png" alt="DUALMOOD Brand" class="brand-story__image">
+        </div>
+        <div class="brand-story__content">
+          <p class="brand-story__label">A Történetünk</p>
+          <h2 class="brand-story__title">Born From<br>Two Moods.</h2>
+          <p class="brand-story__text">
+            A DUALMOOD Magyarországon született, fiatalok által, fiataloknak. 
+            Hisszük, hogy a divat nem csak ruha — hanem önkifejezés. Mindannyiunkban 
+            ott él két oldal, és mi ezt a kettősséget ünnepeljük.
+          </p>
+          <p class="brand-story__text">
+            Az angry face logónk nem a dühöt, hanem az intenzitást jelképezi. 
+            Azt az energiát, amit magadban hordozol. Minden darabunk 
+            limitált szériában készül, mert az egyediség számunkra nem marketing 
+            fogás — hanem alapelv.
+          </p>
+          <p class="brand-story__text">
+            Prémium 240g/m² pamut, gondosan tervezett szabás, és nyomatok 
+            amelyek kibírják az időt. Ez a DUALMOOD minőség.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="section__header">
+        <p class="section__label">Értékeink</p>
+        <h2 class="section__title">Miben Hiszünk</h2>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Autentikusság</h3>
+          <p class="feature-card__text">Nem követünk trendeket — mi teremtjük őket. Minden designunk eredeti és egyedi.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 class="feature-card__title">Közösség</h3>
+          <p class="feature-card__text">A DUALMOOD egy család. Csatlakozz a közösségünkhöz és légy része valaminek.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="feature-card__title">Fenntarthatóság</h3>
+          <p class="feature-card__text">Limitált szériákkal csökkentjük a felesleges termelést és a textilhulladékot.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================ -->
+  <!-- CONTACT PAGE -->
+  <!-- ================================ -->
+  <main class="page" id="page-contact">
+    <section class="section">
+      <div class="section__header">
+        <p class="section__label">Kapcsolat</p>
+        <h2 class="section__title">Írj Nekünk</h2>
+        <p class="section__subtitle">Kérdésed van? Szívesen segítünk.</p>
+      </div>
+      <div class="faq__container">
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #666;">Név</label>
+            <input type="text" id="contactName" style="width: 100%; padding: 14px 18px; background: #161616; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 0.9rem; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='rgba(255,255,255,0.2)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #666;">Email</label>
+            <input type="email" id="contactEmail" style="width: 100%; padding: 14px 18px; background: #161616; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 0.9rem; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='rgba(255,255,255,0.2)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'">
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <label style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #666;">Üzenet</label>
+            <textarea id="contactMessage" rows="5" style="width: 100%; padding: 14px 18px; background: #161616; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 0.9rem; outline: none; resize: vertical; transition: border-color 0.2s;" onfocus="this.style.borderColor='rgba(255,255,255,0.2)'" onblur="this.style.borderColor='rgba(255,255,255,0.08)'"></textarea>
+          </div>
+          <button type="button" id="contactSubmitBtn" style="width: 100%; padding: 16px; background: #fff; color: #0a0a0a; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; border: none; border-radius: 4px; cursor: pointer; transition: opacity 0.2s, transform 0.2s; font-family: 'Inter', sans-serif;" onmouseover="this.style.opacity='0.9'; this.style.transform='translateY(-2px)'" onmouseout="this.style.opacity='1'; this.style.transform='translateY(0)'">
+            Küldés
+          </button>
+        </div>
+
+        <div style="margin-top: 4rem; display: flex; flex-direction: column; gap: 1.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08);">
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            <span style="color: #a0a0a0; font-size: 0.9rem;">info@dualmood.hu</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span style="color: #a0a0a0; font-size: 0.9rem;">@dualmood</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span style="color: #a0a0a0; font-size: 0.9rem;">Budapest, Magyarország</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="uj logo/image0 (11).png" alt="DUALMOOD">
+            <span class="footer__logo-text">DUALMO®D</span>
+          </div>
+          <p class="footer__brand-description">
+            Magyar streetwear márka. Limitált szériás, prémium minőségű utcai ruházat. 
+            Fejezd ki a kettős hangulatodat.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Shop</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link" data-page="shop">Összes Termék</a>
+            <a href="#" class="footer__link">Új Kollekció</a>
+            <a href="#" class="footer__link">Méretek</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Információ</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link" data-page="about">Rólunk</a>
+            <a href="#" class="footer__link" data-page="contact">Kontakt</a>
+            <a href="#" class="footer__link">GYIK</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Jogi</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">ÁSZF</a>
+            <a href="#" class="footer__link">Adatvédelem</a>
+            <a href="#" class="footer__link">Szállítás & Visszaküldés</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 DUALMOOD. Minden jog fenntartva.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/dualmood" target="_blank" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://tiktok.com/@dualmood" target="_blank" class="footer__social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-overlay__header">
+      <span style="font-size: 0.7rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #666;">KERESÉS</span>
+      <button class="search-overlay__close" id="searchClose" aria-label="Bezárás">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="search-overlay__body">
+      <div class="search-overlay__input-wrapper">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="search-overlay__input" id="searchInput" placeholder="Mit keresel?" autocomplete="off">
+      </div>
+      <p class="search-overlay__hint">Írd be a termék nevét</p>
+      
+      <div class="search-overlay__results" id="searchResults">
+        <!-- Default: popular tags -->
+        <div class="search-overlay__popular" id="searchPopular">
+          <p class="search-overlay__results-title">Népszerű keresések</p>
+          <div class="search-overlay__popular-tags">
+            <button class="search-overlay__tag" data-query="angry">ANGRYMOOD</button>
+            <button class="search-overlay__tag" data-query="happy">HAPPYMOOD</button>
+            <button class="search-overlay__tag" data-query="polo">Polo</button>
+            <button class="search-overlay__tag" data-query="új">Új drop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Hozzáadva a kosárhoz!</div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Vissza a tetejére">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer__backdrop" id="cartBackdrop"></div>
+    <div class="cart-drawer__content">
+      <div class="cart-drawer__header">
+        <h2 class="cart-drawer__title">Kosár</h2>
+        <button class="cart-drawer__close" id="cartClose" aria-label="Bezárás">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      
+      <!-- Cart Step 1: Cart Items -->
+      <div class="cart-drawer__step active" id="cartStepItems">
+        <div class="cart-drawer__items" id="cartItemsList">
+          <!-- Populated by JS -->
+        </div>
+        <div class="cart-drawer__footer">
+          <div class="cart-drawer__summary">
+            <span>ÖSSZESEN:</span>
+            <span class="cart-drawer__total" id="cartTotalVal">0 Ft</span>
+          </div>
+          <button class="cart-drawer__checkout-btn" id="proceedToCheckoutBtn">TOVÁBB A MEGRENDELÉSHEZ</button>
+        </div>
+      </div>
+      
+      <!-- Cart Step 2: Checkout Form -->
+      <div class="cart-drawer__step" id="cartStepCheckout">
+        <form class="cart-drawer__form" id="checkoutForm" onsubmit="event.preventDefault();">
+          <h3 class="cart-drawer__form-title">Szállítási adatok</h3>
+          <div class="cart-drawer__input-group">
+            <label for="checkoutName">Név</label>
+            <input type="text" id="checkoutName" required placeholder="Teljes név">
+          </div>
+          <div class="cart-drawer__input-group">
+            <label for="checkoutEmail">Email</label>
+            <input type="email" id="checkoutEmail" required placeholder="Email cím">
+          </div>
+          <div class="cart-drawer__input-group">
+            <label for="checkoutPhone">Telefon</label>
+            <input type="tel" id="checkoutPhone" required placeholder="Telefonszám">
+          </div>
+          <div class="cart-drawer__row">
+            <div class="cart-drawer__input-group">
+              <label for="checkoutZip">Irányítószám</label>
+              <input type="text" id="checkoutZip" required placeholder="Irányítószám">
+            </div>
+            <div class="cart-drawer__input-group">
+              <label for="checkoutCity">Város</label>
+              <input type="text" id="checkoutCity" required placeholder="Város">
+            </div>
+          </div>
+          <div class="cart-drawer__input-group">
+            <label for="checkoutAddress">Utca, házszám</label>
+            <input type="text" id="checkoutAddress" required placeholder="Utca, házszám, emelet/ajtó">
+          </div>
+          <div class="cart-drawer__footer" style="padding: 1.5rem 0 0 0; position: static; border-top: 1px solid var(--border-color);">
+            <div class="cart-drawer__summary">
+              <span>Fizetendő végösszeg:</span>
+              <span class="cart-drawer__total" id="checkoutTotalVal">0 Ft</span>
+            </div>
+            <div class="cart-drawer__btn-row">
+              <button type="button" class="cart-drawer__back-btn-drawer" id="backToItemsBtn">Vissza</button>
+              <button type="submit" class="cart-drawer__submit-btn" id="submitOrderBtn">RENDELÉS ELKÜLDÉSE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Cart Step 3: Success Screen -->
+      <div class="cart-drawer__step" id="cartStepSuccess">
+        <div class="cart-drawer__success">
+          <div class="cart-drawer__success-icon">✓</div>
+          <h3 class="cart-drawer__success-title">Köszönjük a rendelést!</h3>
+          <p class="cart-drawer__success-text">A rendelést sikeresen rögzítettük. Küldtünk egy visszaigazoló emailt a megadott email címre a rendelés részleteivel.</p>
+          <button class="cart-drawer__checkout-btn" id="closeSuccessBtn" style="margin-top: 2rem;">VÁSÁRLÁS FOLYTATÁSA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=25"></script>
+</body>
+</html>

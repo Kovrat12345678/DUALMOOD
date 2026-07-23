@@ -1,0 +1,33 @@
+=== RENDELÉS: 2026-07-23 14:11:50 ===
+Név: Kovács István
+Email: byekovrat@gmail.com
+Telefon: +36 20 123 4567
+Cím: 1051 Budapest, Petőfi Sándor utca 5.
+Termékek:
+- DUALMOOD TRACKSET (Méret: S) - 17990
+Végösszeg: 17990 Ft
+Email küldés státusz: Admin: MEGHIÚSULT, Vásárló: MEGHIÚSULT
+====================================
+
+=== RENDELÉS: 2026-07-23 14:13:11 ===
+Név: Kovács István
+Email: byekovrat@gmail.com
+Telefon: +36 20 123 4567
+Cím: 1051 Budapest, Petőfi Sándor utca 5.
+Termékek:
+- DUALMOOD TRACKSET (Méret: S) - 17990
+Végösszeg: 17990 Ft
+Email küldés státusz: Admin: MEGHIÚSULT, Vásárló: MEGHIÚSULT
+====================================
+
+=== RENDELÉS: 2026-07-23 14:15:20 ===
+Név: Szabó Kovrat Kende
+Email: byekovrat@gmail.com
+Telefon: +36306865192
+Cím: 5310 Kisújszállás, Deák Ferenc u. 141
+Termékek:
+- DUALMOOD SHORTS (Méret: S) - 10990
+Végösszeg: 10990 Ft
+Email küldés státusz: Admin: MEGHIÚSULT, Vásárló: MEGHIÚSULT
+====================================
+
