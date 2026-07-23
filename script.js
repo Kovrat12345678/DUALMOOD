@@ -1088,19 +1088,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       
-      if (code === 'DUALMOOD10') {
+      if (code === 'DUALMOOD10' || code === 'WELCOME10') {
         appliedDiscount = 0.10;
-        appliedCouponCode = 'DUALMOOD10';
+        appliedCouponCode = code;
         couponFeedback.style.display = 'block';
         couponFeedback.style.color = '#22c55e';
         couponFeedback.textContent = 'Kupon érvényesítve: 10% kedvezmény levonva!';
-        updateCart();
-      } else if (code === 'DUALMOOD20') {
-        appliedDiscount = 0.20;
-        appliedCouponCode = 'DUALMOOD20';
-        couponFeedback.style.display = 'block';
-        couponFeedback.style.color = '#22c55e';
-        couponFeedback.textContent = 'Kupon érvényesítve: 20% kedvezmény levonva!';
         updateCart();
       } else {
         appliedDiscount = 0;
