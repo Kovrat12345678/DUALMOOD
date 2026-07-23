@@ -1088,7 +1088,12 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       
-      if (code === 'DUALMOOD10' || code === 'WELCOME10') {
+      const validCoupons = [
+        'OMIRJ', 'ATKYR', 'BFGDA', 'RUYWL',
+        'EOKNP', 'HQNAO', 'ANGDC', 'NJTQF'
+      ];
+
+      if (validCoupons.includes(code)) {
         appliedDiscount = 0.10;
         appliedCouponCode = code;
         couponFeedback.style.display = 'block';
