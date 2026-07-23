@@ -210,7 +210,6 @@ ul, ol {
 .header__logo img {
   height: 36px;
   width: auto;
-  filter: invert(1);
   transition: transform var(--transition-base);
 }
 
@@ -454,7 +453,7 @@ ul, ol {
   margin: 0 auto var(--space-md);
   opacity: 0;
   animation: hero-fade-up 1s ease-out 0.3s forwards;
-  filter: invert(1) drop-shadow(0 0 20px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.08));
 }
 
 .hero__title {
@@ -743,7 +742,6 @@ ul, ol {
   width: 100%;
   border-radius: var(--radius-lg);
   opacity: 0.9;
-  filter: invert(1);
 }
 
 .brand-story__content {
@@ -1077,7 +1075,6 @@ ul, ol {
 
 .footer__logo img {
   height: 32px;
-  filter: invert(1);
 }
 
 .footer__logo-text {
