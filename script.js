@@ -562,6 +562,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // --- Cart State ---
+  let appliedDiscount = 0;
+  let appliedCouponCode = '';
+
   // --- Cart ---
   function updateCart() {
     if (cartCount) {
@@ -686,6 +690,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         switchCartStep('success');
         cartItems = [];
+        appliedDiscount = 0;
+        appliedCouponCode = '';
+        if (couponFeedback) couponFeedback.style.display = 'none';
         updateCart();
         checkoutForm.reset();
       })
@@ -698,7 +705,7 @@ document.addEventListener('DOMContentLoaded', () => {
           "Phone": orderData.customer_phone,
           "Address": `${orderData.customer_zip} ${orderData.customer_city}, ${orderData.customer_address}`,
           "Products": orderData.cart_items.map(i => `${i.name} (Méret: ${i.size})`).join(', '),
-          "Total Value": `${orderData.total_price.toLocaleString('hu-HU')} Ft`,
+          "Total Value": `${orderData.total_price.toLocaleString('hu-HU')} Ft` + (appliedCouponCode ? ` (Kupon: ${appliedCouponCode}, -${Math.round(appliedDiscount * 100)}%)` : ''),
           "_subject": "Új DUALMOOD Rendelés (GitHub Pages) - " + orderData.customer_name
         };
 
@@ -717,6 +724,9 @@ document.addEventListener('DOMContentLoaded', () => {
           }
           switchCartStep('success');
           cartItems = [];
+          appliedDiscount = 0;
+          appliedCouponCode = '';
+          if (couponFeedback) couponFeedback.style.display = 'none';
           updateCart();
           checkoutForm.reset();
         });
@@ -725,10 +735,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function calculateTotal() {
-    return cartItems.reduce((sum, item) => {
+    const rawTotal = cartItems.reduce((sum, item) => {
       const product = products[item.id];
       return sum + (product ? product.priceNum : 12990);
     }, 0);
+    return Math.round(rawTotal * (1 - appliedDiscount));
   }
 
   // Update Cart details in Drawer
@@ -775,9 +786,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     cartItemsList.innerHTML = html;
-    const formattedTotal = total.toLocaleString('hu-HU') + ' Ft';
-    if (cartTotalVal) cartTotalVal.textContent = formattedTotal;
-    if (checkoutTotalVal) checkoutTotalVal.textContent = formattedTotal;
+    
+    const discountAmount = Math.round(total * appliedDiscount);
+    const finalTotal = total - discountAmount;
+    
+    if (cartTotalVal) {
+      cartTotalVal.textContent = total.toLocaleString('hu-HU') + ' Ft';
+    }
+    
+    if (checkoutTotalVal) {
+      if (appliedDiscount > 0) {
+        checkoutTotalVal.innerHTML = `
+          <span style="text-decoration: line-through; font-size: 0.9rem; color: var(--text-secondary); margin-right: 0.5rem;">${total.toLocaleString('hu-HU')} Ft</span>
+          <span style="color: #22c55e;">${finalTotal.toLocaleString('hu-HU')} Ft</span>
+        `;
+      } else {
+        checkoutTotalVal.textContent = total.toLocaleString('hu-HU') + ' Ft';
+      }
+    }
   }
 
   // Make removeCartItem globally accessible
@@ -1042,6 +1068,40 @@ document.addEventListener('DOMContentLoaded', () => {
         // Save in localStorage so it doesn't pop up again
         localStorage.setItem('promo_seen', 'true');
         showToast('Kuponkód sikeresen generálva! 🎉');
+      }
+    });
+  }
+
+  // --- Coupon Verification ---
+  const applyCouponBtn = document.getElementById('applyCouponBtn');
+  const checkoutCoupon = document.getElementById('checkoutCoupon');
+  const couponFeedback = document.getElementById('couponFeedback');
+
+  if (applyCouponBtn && checkoutCoupon && couponFeedback) {
+    applyCouponBtn.addEventListener('click', () => {
+      const code = checkoutCoupon.value.trim().toUpperCase();
+      if (code === '') {
+        appliedDiscount = 0;
+        appliedCouponCode = '';
+        couponFeedback.style.display = 'none';
+        updateCart();
+        return;
+      }
+      
+      if (code === 'DUALMOOD10') {
+        appliedDiscount = 0.10;
+        appliedCouponCode = 'DUALMOOD10';
+        couponFeedback.style.display = 'block';
+        couponFeedback.style.color = '#22c55e';
+        couponFeedback.textContent = 'Kupon érvényesítve: 10% kedvezmény levonva!';
+        updateCart();
+      } else {
+        appliedDiscount = 0;
+        appliedCouponCode = '';
+        couponFeedback.style.display = 'block';
+        couponFeedback.style.color = '#ef4444';
+        couponFeedback.textContent = 'Érvénytelen kuponkód!';
+        updateCart();
       }
     });
   }

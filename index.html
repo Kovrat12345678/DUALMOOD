@@ -11,7 +11,7 @@
   <meta property="og:type" content="website">
   <title>DUALMOOD — Express Your Dual Mood</title>
   <link rel="icon" type="image/png" href="uj logo/image0 (11).png">
-  <link rel="stylesheet" href="style.css?v=28">
+  <link rel="stylesheet" href="style.css?v=29">
 </head>
 <body>
 
@@ -898,6 +898,16 @@
             <label for="checkoutAddress">Utca, házszám</label>
             <input type="text" id="checkoutAddress" required placeholder="Utca, házszám, emelet/ajtó">
           </div>
+          
+          <!-- Coupon Code Field -->
+          <div class="cart-drawer__input-group" style="margin-top: 1.5rem;">
+            <label for="checkoutCoupon" style="display: block; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 0.5rem; text-transform: uppercase; color: var(--text-secondary);">Kuponkód</label>
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="text" id="checkoutCoupon" placeholder="pl. DUALMOOD10" style="flex: 1; padding: 0.8rem; background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); font-family: inherit; font-size: 0.9rem; text-transform: uppercase;">
+              <button type="button" id="applyCouponBtn" style="padding: 0.8rem 1.5rem; background: var(--text-primary); color: var(--bg-primary); border: none; font-weight: 600; cursor: pointer; transition: opacity 0.2s; font-size: 0.85rem; letter-spacing: 1px;">ÉRVÉNYESÍT</button>
+            </div>
+            <div id="couponFeedback" style="font-size: 0.8rem; margin-top: 0.4rem; display: none;"></div>
+          </div>
           <div class="cart-drawer__footer" style="padding: 1.5rem 0 0 0; position: static; border-top: 1px solid var(--border-color);">
             <div class="cart-drawer__summary">
               <span>Fizetendő végösszeg:</span>
@@ -949,6 +959,6 @@
     </div>
   </div>
 
-  <script src="script.js?v=28"></script>
+  <script src="script.js?v=29"></script>
 </body>
 </html>
