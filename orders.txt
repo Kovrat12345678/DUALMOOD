@@ -31,3 +31,25 @@ Végösszeg: 10990 Ft
 Email küldés státusz: Admin: MEGHIÚSULT, Vásárló: MEGHIÚSULT
 ====================================
 
+=== RENDELÉS: 2026-07-23 14:22:07 ===
+Név: Kovács István
+Email: byekovrat@gmail.com
+Telefon: +36 20 123 4567
+Cím: 1051 Budapest, Petőfi Sándor utca 5.
+Termékek:
+- DUALMOOD TRACKSET (Méret: M) - 17990
+Végösszeg: 17990 Ft
+Email küldés státusz: Admin: SIKERES (FormSubmit), Vásárló: SIKERES (FormSubmit)
+====================================
+
+=== RENDELÉS: 2026-07-23 14:24:31 ===
+Név: Kovrat
+Email: byekovrat@gmail.com
+Telefon: +36306865192
+Cím: 4110 Püspökladány, Kálvin jános u 42
+Termékek:
+- HAPPYMOOD BRONZE (Méret: S) - 12990
+Végösszeg: 12990 Ft
+Email küldés státusz: Admin: SIKERES (FormSubmit), Vásárló: SIKERES (FormSubmit)
+====================================
+

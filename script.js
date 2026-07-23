@@ -6,12 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Product Data ---
   const products = {
     'angrymood-polo': {
-      name: 'ANGRYMOOD Polo',
+      name: 'ANGRYMOOD TEE',
       price: '12 990 Ft',
       priceNum: 12990,
       images: ['fehér ruha háttér/image5 (1).jpeg'],
       sizes: ['S', 'M', 'L', 'XL'],
-      description: 'Az ANGRYMOOD Polo a DUALMOOD első kollekciójának zászlóshajója. Oversized szabás, galléros dizájn, a márka ikonikus angry face logójával az elején.',
+      description: 'Az ANGRYMOOD TEE a DUALMOOD első kollekciójának zászlóshajója. Oversized szabás, galléros dizájn, a márka ikonikus angry face logójával az elején.',
       details: [
         '240g/m² prémium pamut',
         'Oversized fit',
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badge: 'ÚJ'
     },
     'angrymood-tee': {
-      name: 'ANGRYMOOD',
+      name: 'ANGRYMOOD TEE',
       price: '12 990 Ft',
       priceNum: 12990,
       images: ['fehér ruha háttér/image4 (1).jpeg'],
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badge: 'ÚJ'
     },
     'happymood-tee': {
-      name: 'HAPPYMOOD',
+      name: 'HAPPYMOOD TEE',
       price: '12 990 Ft',
       priceNum: 12990,
       images: ['fehér ruha háttér/image3 (1).jpeg'],
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badge: 'ÚJ DROP'
     },
     'happymood-bronze': {
-      name: 'HAPPYMOOD BRONZE',
+      name: 'HAPPYMOOD BRONZE TEE',
       price: '12 990 Ft',
       priceNum: 12990,
       images: ['fehér ruha háttér/image1 (2).jpeg'],
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       badge: 'ÚJ DROP'
     },
     'dualmood-bronze': {
-      name: 'HAPPYMOOD BRONZE',
+      name: 'HAPPYMOOD BRONZE TEE',
       price: '12 990 Ft',
       priceNum: 12990,
       images: ['fehér ruha háttér/image1 (2).jpeg'],
@@ -120,6 +120,104 @@ document.addEventListener('DOMContentLoaded', () => {
         'Gumírozott derék húzózsinórral',
         'Hímzett DUALMOOD logó',
         'Limitált szériás kiadás',
+        'Mosógépben mosható 30°C-on'
+      ],
+      badge: 'ÚJ DROP'
+    },
+    'happymood-toxic-yellow': {
+      name: 'HAPPYMOOD TOXIC YELLOW',
+      price: '12 990 Ft',
+      priceNum: 12990,
+      images: ['dropp/image0 (12).png'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      description: 'Fekete oversized pamut póló HAPPYMOOD 3D puff print sárga kontúr logóval.',
+      details: [
+        '240g/m² prémium válogatott pamut',
+        'Oversized fit szabás',
+        'Crew neck nyakkivágás',
+        'Sárga kontúr logó print',
+        'Limitált szériás drop kiadás',
+        'Mosógépben mosható 30°C-on'
+      ],
+      badge: 'ÚJ DROP'
+    },
+    'happymood-eletric-pink': {
+      name: 'HAPPYMOOD ELETRIC PINK',
+      price: '12 990 Ft',
+      priceNum: 12990,
+      images: ['dropp/image1 (3).png'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      description: 'Fekete oversized pamut póló HAPPYMOOD 3D puff print rózsaszín kontúr logóval.',
+      details: [
+        '240g/m² prémium válogatott pamut',
+        'Oversized fit szabás',
+        'Crew neck nyakkivágás',
+        'Rózsaszín kontúr logó print',
+        'Limitált szériás drop kiadás',
+        'Mosógépben mosható 30°C-on'
+      ],
+      badge: 'ÚJ DROP'
+    },
+    'dualmood-pink-tee': {
+      name: 'DUALMOOD PINK TEE',
+      price: '12 990 Ft',
+      priceNum: 12990,
+      images: ['dropp/image2 (2).png'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      description: 'Fekete oversized pamut póló DUALMOOD 3D puff print rózsaszín felirattal és kontúr logóval.',
+      details: [
+        '240g/m² prémium pamut',
+        'Oversized fit szabás',
+        'Crew neck nyakkivágás',
+        'Limitált szériás drop kiadás',
+        'Mosógépben mosható 30°C-on'
+      ],
+      badge: 'ÚJ DROP'
+    },
+    'dualmood-white-tee': {
+      name: 'DUALMOOD WHITE TEE',
+      price: '12 990 Ft',
+      priceNum: 12990,
+      images: ['dropp/image3 (1).png'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      description: 'Fekete oversized pamut póló DUALMOOD 3D puff print fehér/szürke felirattal és kontúr logóval.',
+      details: [
+        '240g/m² prémium pamut',
+        'Oversized fit szabás',
+        'Crew neck nyakkivágás',
+        'Limitált szériás drop kiadás',
+        'Mosógépben mosható 30°C-on'
+      ],
+      badge: 'ÚJ DROP'
+    },
+    'dualmood-pink-shorts': {
+      name: 'DUALMOOD PINK SHORTS',
+      price: '10 990 Ft',
+      priceNum: 10990,
+      images: ['dropp/image4.png'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      description: 'Prémium minőségű fekete melegítő shorts pink hímzett logóval és DUALMOOD felirattal.',
+      details: [
+        '300g/m² nehézsúlyú pamut',
+        'Kényelmes, lezser szabás',
+        'Gumírozott, kötős derékrész',
+        'Limitált szériás drop kiadás',
+        'Mosógépben mosható 30°C-on'
+      ],
+      badge: 'ÚJ DROP'
+    },
+    'dualmood-striped-shorts': {
+      name: 'DUALMOOD STRIPED SHORTS',
+      price: '11 990 Ft',
+      priceNum: 11990,
+      images: ['dropp/image5.png'],
+      sizes: ['S', 'M', 'L', 'XL'],
+      description: 'Prémium minőségű fekete melegítő shorts oldalsó pink csíkokkal és hímzett DUALMOOD logóval.',
+      details: [
+        '300g/m² nehézsúlyú pamut',
+        'Kényelmes, lezser szabás',
+        'Gumírozott, kötős derékrész',
+        'Limitált szériás drop kiadás',
         'Mosógépben mosható 30°C-on'
       ],
       badge: 'ÚJ DROP'
@@ -333,6 +431,10 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', (e) => {
     const card = e.target.closest('.product-card');
     if (card) {
+      if (card.classList.contains('product-card--locked')) {
+        e.preventDefault();
+        return;
+      }
       e.preventDefault();
       const productId = card.dataset.product;
       if (productId && products[productId]) {
@@ -684,13 +786,56 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCart();
   };
 
+  // --- Products Unlock logic ---
+  let productsUnlocked = false;
+  function unlockProducts() {
+    if (productsUnlocked) return;
+    productsUnlocked = true;
+    
+    document.querySelectorAll('.product-card--locked').forEach(card => {
+      // Remove locked layout classes
+      card.classList.remove('product-card--locked');
+      
+      // Remove lock overlay
+      const overlay = card.querySelector('.product-card__lock-overlay');
+      if (overlay) overlay.remove();
+      
+      // Replace lock badge with normal badge
+      const badge = card.querySelector('.product-card__badge--locked');
+      if (badge) {
+        badge.classList.remove('product-card__badge--locked');
+        badge.textContent = 'ÚJ DROP';
+      }
+      
+      // Reveal actual price
+      const productId = card.dataset.product;
+      if (productId && products[productId]) {
+        const priceEl = card.querySelector('.product-card__price');
+        if (priceEl) priceEl.textContent = products[productId].price;
+      }
+      
+      // Append details hover overlay so card acts like standard cards
+      const wrapper = card.querySelector('.product-card__image-wrapper');
+      if (wrapper) {
+        const hoverOverlay = document.createElement('div');
+        hoverOverlay.className = 'product-card__overlay';
+        hoverOverlay.innerHTML = '<button class="product-card__quick-view">RÉSZLETEK</button>';
+        wrapper.appendChild(hoverOverlay);
+      }
+    });
+  }
+
   // --- Countdown Timer ---
   function initCountdown() {
-    const targetDate = new Date('2026-07-25T00:00:00').getTime();
+    const targetDate = new Date('2026-07-25T18:00:00').getTime();
     
     function updateTimer() {
       const now = new Date().getTime();
       const distance = targetDate - now;
+      
+      if (distance <= 0) {
+        unlockProducts();
+      }
       
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -853,6 +998,50 @@ document.addEventListener('DOMContentLoaded', () => {
       const bgImage = hero.querySelector('.hero__bg-image');
       if (bgImage && scrolled < window.innerHeight) {
         bgImage.style.transform = `scale(${1 + scrolled * 0.0003}) translateY(${scrolled * 0.3}px)`;
+      }
+    });
+  }
+
+  // --- Newsletter Promo Modal ---
+  const promoModal = document.getElementById('promoModal');
+  const promoClose = document.getElementById('promoClose');
+  const promoBackdrop = document.getElementById('promoBackdrop');
+  const promoForm = document.getElementById('promoForm');
+  const promoSuccessMsg = document.getElementById('promoSuccessMsg');
+
+  // Trigger modal after 1.5 seconds if they haven't seen/filled it in this session
+  if (promoModal && !localStorage.getItem('promo_seen')) {
+    setTimeout(() => {
+      promoModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }, 1500);
+  }
+
+  function closePromoModal() {
+    if (promoModal) {
+      promoModal.classList.remove('active');
+      document.body.style.overflow = '';
+      localStorage.setItem('promo_seen', 'true');
+    }
+  }
+
+  if (promoClose) promoClose.addEventListener('click', closePromoModal);
+  if (promoBackdrop) promoBackdrop.addEventListener('click', closePromoModal);
+
+  if (promoForm) {
+    promoForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = document.getElementById('promoEmail');
+      if (emailInput && emailInput.value) {
+        // Hide form fields
+        promoForm.style.display = 'none';
+        // Show success message with promo code
+        if (promoSuccessMsg) {
+          promoSuccessMsg.classList.add('active');
+        }
+        // Save in localStorage so it doesn't pop up again
+        localStorage.setItem('promo_seen', 'true');
+        showToast('Kuponkód sikeresen generálva! 🎉');
       }
     });
   }

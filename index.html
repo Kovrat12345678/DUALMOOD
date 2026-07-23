@@ -95,6 +95,35 @@
         <img src="uj logo/image0 (11).png" alt="DUALMOOD" class="hero__logo-icon">
         <h1 class="hero__title">DUAL<br>MO®D</h1>
         <p class="hero__subtitle">Express your dual mood — Streetwear with attitude</p>
+        
+        <!-- Countdown Banner -->
+        <div class="countdown-banner-wrapper hero__countdown">
+          <div class="countdown-banner">
+            <p class="countdown-banner__label">KÖVETKEZŐ DROPIG HÁTRALÉVŐ IDŐ</p>
+            <div class="countdown-banner__timer" id="countdownTimer">
+              <div class="countdown-banner__unit">
+                <span class="countdown-banner__num" id="cdDays">00</span>
+                <span class="countdown-banner__name">Nap</span>
+              </div>
+              <span class="countdown-banner__colon">:</span>
+              <div class="countdown-banner__unit">
+                <span class="countdown-banner__num" id="cdHours">00</span>
+                <span class="countdown-banner__name">Óra</span>
+              </div>
+              <span class="countdown-banner__colon">:</span>
+              <div class="countdown-banner__unit">
+                <span class="countdown-banner__num" id="cdMinutes">00</span>
+                <span class="countdown-banner__name">Perc</span>
+              </div>
+              <span class="countdown-banner__colon">:</span>
+              <div class="countdown-banner__unit">
+                <span class="countdown-banner__num" id="cdSeconds">00</span>
+                <span class="countdown-banner__name">Másodperc</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <a href="#" class="hero__cta" data-page="shop">
           SHOP NOW
           <span class="hero__cta-arrow">→</span>
@@ -133,66 +162,117 @@
         <p class="section__subtitle">Limitált darabszám — ha elfogyott, elfogyott.</p>
       </div>
       <div class="products__grid products__grid--scroll">
-        <!-- Item 1: DUALMOOD TRACKSET -->
-        <div class="product-card reveal reveal-delay-1" data-product="dualmood-trackset">
+        <!-- Item 4 (Locked): HAPPYMOOD TOXIC YELLOW TEE -->
+        <div class="product-card product-card--locked reveal reveal-delay-1" data-product="happymood-toxic-yellow">
           <div class="product-card__image-wrapper">
-            <img src="fehér ruha háttér/image0 (5).jpeg" alt="DUALMOOD TRACKSET" class="product-card__image">
-            <div class="product-card__overlay">
-              <button class="product-card__quick-view">RÉSZLETEK</button>
+            <img src="dropp/image0 (12).png" alt="HAPPYMOOD TOXIC YELLOW TEE" class="product-card__image">
+            <div class="product-card__lock-overlay">
+              <svg class="product-card__lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span class="product-card__lock-text">Lelakatolva</span>
             </div>
-            <span class="product-card__badge">ÚJ DROP</span>
+            <span class="product-card__badge product-card__badge--locked">🔒 KÖVETKEZŐ DROP</span>
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__name">DUALMOOD TRACKSET</h3>
-            <p class="product-card__price">17 990 Ft</p>
-            <div class="product-card__sizes">
-              <span class="product-card__size">S</span>
-              <span class="product-card__size">M</span>
-              <span class="product-card__size">L</span>
-              <span class="product-card__size">XL</span>
-            </div>
+            <h3 class="product-card__name">HAPPYMOOD TOXIC YELLOW TEE</h3>
+            <p class="product-card__price">🔒 ??? Ft</p>
           </div>
         </div>
 
-        <!-- Item 2: HAPPYMOOD BRONZE -->
-        <div class="product-card reveal reveal-delay-2" data-product="happymood-bronze">
+        <!-- Item 5 (Locked): HAPPYMOOD ELETRIC PINK TEE -->
+        <div class="product-card product-card--locked reveal reveal-delay-2" data-product="happymood-eletric-pink">
           <div class="product-card__image-wrapper">
-            <img src="fehér ruha háttér/image1 (2).jpeg" alt="HAPPYMOOD BRONZE" class="product-card__image">
-            <div class="product-card__overlay">
-              <button class="product-card__quick-view">RÉSZLETEK</button>
+            <img src="dropp/image1 (3).png" alt="HAPPYMOOD ELETRIC PINK TEE" class="product-card__image">
+            <div class="product-card__lock-overlay">
+              <svg class="product-card__lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span class="product-card__lock-text">Lelakatolva</span>
             </div>
-            <span class="product-card__badge">ÚJ DROP</span>
+            <span class="product-card__badge product-card__badge--locked">🔒 KÖVETKEZŐ DROP</span>
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__name">HAPPYMOOD BRONZE</h3>
-            <p class="product-card__price">12 990 Ft</p>
-            <div class="product-card__sizes">
-              <span class="product-card__size">S</span>
-              <span class="product-card__size">M</span>
-              <span class="product-card__size">L</span>
-              <span class="product-card__size">XL</span>
-            </div>
+            <h3 class="product-card__name">HAPPYMOOD ELETRIC PINK TEE</h3>
+            <p class="product-card__price">🔒 ??? Ft</p>
           </div>
         </div>
 
-        <!-- Item 3: DUALMOOD SHORTS -->
-        <div class="product-card reveal reveal-delay-3" data-product="dualmood-shorts">
+        <!-- Item 6 (Locked): DUALMOOD PINK TEE -->
+        <div class="product-card product-card--locked reveal reveal-delay-3" data-product="dualmood-pink-tee">
           <div class="product-card__image-wrapper">
-            <img src="fehér ruha háttér/image2 (3).jpeg" alt="DUALMOOD SHORTS" class="product-card__image">
-            <div class="product-card__overlay">
-              <button class="product-card__quick-view">RÉSZLETEK</button>
+            <img src="dropp/image2 (2).png" alt="DUALMOOD PINK TEE" class="product-card__image">
+            <div class="product-card__lock-overlay">
+              <svg class="product-card__lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span class="product-card__lock-text">Lelakatolva</span>
             </div>
-            <span class="product-card__badge">ÚJ DROP</span>
+            <span class="product-card__badge product-card__badge--locked">🔒 KÖVETKEZŐ DROP</span>
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__name">DUALMOOD SHORTS</h3>
-            <p class="product-card__price">10 990 Ft</p>
-            <div class="product-card__sizes">
-              <span class="product-card__size">S</span>
-              <span class="product-card__size">M</span>
-              <span class="product-card__size">L</span>
-              <span class="product-card__size">XL</span>
+            <h3 class="product-card__name">DUALMOOD PINK TEE</h3>
+            <p class="product-card__price">🔒 ??? Ft</p>
+          </div>
+        </div>
+
+        <!-- Item 7 (Locked): DUALMOOD WHITE TEE -->
+        <div class="product-card product-card--locked reveal reveal-delay-1" data-product="dualmood-white-tee">
+          <div class="product-card__image-wrapper">
+            <img src="dropp/image3 (1).png" alt="DUALMOOD WHITE TEE" class="product-card__image">
+            <div class="product-card__lock-overlay">
+              <svg class="product-card__lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span class="product-card__lock-text">Lelakatolva</span>
             </div>
+            <span class="product-card__badge product-card__badge--locked">🔒 KÖVETKEZŐ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">DUALMOOD WHITE TEE</h3>
+            <p class="product-card__price">🔒 ??? Ft</p>
+          </div>
+        </div>
+
+        <!-- Item 8 (Locked): DUALMOOD PINK SHORTS -->
+        <div class="product-card product-card--locked reveal reveal-delay-2" data-product="dualmood-pink-shorts">
+          <div class="product-card__image-wrapper">
+            <img src="dropp/image4.png" alt="DUALMOOD PINK SHORTS" class="product-card__image">
+            <div class="product-card__lock-overlay">
+              <svg class="product-card__lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span class="product-card__lock-text">Lelakatolva</span>
+            </div>
+            <span class="product-card__badge product-card__badge--locked">🔒 KÖVETKEZŐ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">DUALMOOD PINK SHORTS</h3>
+            <p class="product-card__price">🔒 ??? Ft</p>
+          </div>
+        </div>
+
+        <!-- Item 9 (Locked): DUALMOOD STRIPED SHORTS -->
+        <div class="product-card product-card--locked reveal reveal-delay-3" data-product="dualmood-striped-shorts">
+          <div class="product-card__image-wrapper">
+            <img src="dropp/image5.png" alt="DUALMOOD STRIPED SHORTS" class="product-card__image">
+            <div class="product-card__lock-overlay">
+              <svg class="product-card__lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span class="product-card__lock-text">Lelakatolva</span>
+            </div>
+            <span class="product-card__badge product-card__badge--locked">🔒 KÖVETKEZŐ DROP</span>
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__name">DUALMOOD STRIPED SHORTS</h3>
+            <p class="product-card__price">🔒 ??? Ft</p>
           </div>
         </div>
       </div>
@@ -307,32 +387,6 @@
         <button class="shop__filter-btn" data-filter="szett">Szettek & Shorts</button>
       </div>
 
-      <!-- Countdown Banner -->
-      <div class="countdown-banner">
-        <p class="countdown-banner__label">KÖVETKEZŐ DROPIG HÁTRALÉVŐ IDŐ</p>
-        <div class="countdown-banner__timer" id="countdownTimer">
-          <div class="countdown-banner__unit">
-            <span class="countdown-banner__num" id="cdDays">00</span>
-            <span class="countdown-banner__name">Nap</span>
-          </div>
-          <span class="countdown-banner__colon">:</span>
-          <div class="countdown-banner__unit">
-            <span class="countdown-banner__num" id="cdHours">00</span>
-            <span class="countdown-banner__name">Óra</span>
-          </div>
-          <span class="countdown-banner__colon">:</span>
-          <div class="countdown-banner__unit">
-            <span class="countdown-banner__num" id="cdMinutes">00</span>
-            <span class="countdown-banner__name">Perc</span>
-          </div>
-          <span class="countdown-banner__colon">:</span>
-          <div class="countdown-banner__unit">
-            <span class="countdown-banner__num" id="cdSeconds">00</span>
-            <span class="countdown-banner__name">Másodperc</span>
-          </div>
-        </div>
-      </div>
-
       <div class="products__grid">
         <!-- Card 1: DUALMOOD TRACKSET -->
         <div class="product-card" data-product="dualmood-trackset" data-category="szett drop">
@@ -355,17 +409,17 @@
           </div>
         </div>
 
-        <!-- Card 2: HAPPYMOOD BRONZE -->
+        <!-- Card 2: HAPPYMOOD BRONZE TEE -->
         <div class="product-card" data-product="happymood-bronze" data-category="polok drop">
           <div class="product-card__image-wrapper">
-            <img src="fehér ruha háttér/image1 (2).jpeg" alt="HAPPYMOOD BRONZE" class="product-card__image">
+            <img src="fehér ruha háttér/image1 (2).jpeg" alt="HAPPYMOOD BRONZE TEE" class="product-card__image">
             <div class="product-card__overlay">
               <button class="product-card__quick-view">RÉSZLETEK</button>
             </div>
             <span class="product-card__badge">ÚJ DROP</span>
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__name">HAPPYMOOD BRONZE</h3>
+            <h3 class="product-card__name">HAPPYMOOD BRONZE TEE</h3>
             <p class="product-card__price">12 990 Ft</p>
             <div class="product-card__sizes">
               <span class="product-card__size">S</span>
@@ -397,17 +451,17 @@
           </div>
         </div>
 
-        <!-- Card 4: ANGRYMOOD Polo -->
+        <!-- Card 4: ANGRYMOOD TEE -->
         <div class="product-card" data-product="angrymood-polo" data-category="polok">
           <div class="product-card__image-wrapper">
-            <img src="fehér ruha háttér/image5 (1).jpeg" alt="ANGRYMOOD Polo" class="product-card__image">
+            <img src="fehér ruha háttér/image5 (1).jpeg" alt="ANGRYMOOD TEE" class="product-card__image">
             <div class="product-card__overlay">
               <button class="product-card__quick-view">RÉSZLETEK</button>
             </div>
             <span class="product-card__badge">ÚJ</span>
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__name">ANGRYMOOD Polo</h3>
+            <h3 class="product-card__name">ANGRYMOOD TEE</h3>
             <p class="product-card__price">12 990 Ft</p>
             <div class="product-card__sizes">
               <span class="product-card__size">S</span>
@@ -418,17 +472,17 @@
           </div>
         </div>
 
-        <!-- Card 5: ANGRYMOOD -->
+        <!-- Card 5: ANGRYMOOD TEE (Alternative) -->
         <div class="product-card" data-product="angrymood-tee" data-category="polok">
           <div class="product-card__image-wrapper">
-            <img src="fehér ruha háttér/image4 (1).jpeg" alt="ANGRYMOOD" class="product-card__image">
+            <img src="fehér ruha háttér/image4 (1).jpeg" alt="ANGRYMOOD TEE" class="product-card__image">
             <div class="product-card__overlay">
               <button class="product-card__quick-view">RÉSZLETEK</button>
             </div>
             <span class="product-card__badge">ÚJ</span>
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__name">ANGRYMOOD</h3>
+            <h3 class="product-card__name">ANGRYMOOD TEE</h3>
             <p class="product-card__price">12 990 Ft</p>
             <div class="product-card__sizes">
               <span class="product-card__size">S</span>
@@ -439,17 +493,17 @@
           </div>
         </div>
 
-        <!-- Card 6: HAPPYMOOD -->
+        <!-- Card 6: HAPPYMOOD TEE -->
         <div class="product-card" data-product="happymood-tee" data-category="polok">
           <div class="product-card__image-wrapper">
-            <img src="fehér ruha háttér/image3 (1).jpeg" alt="HAPPYMOOD" class="product-card__image">
+            <img src="fehér ruha háttér/image3 (1).jpeg" alt="HAPPYMOOD TEE" class="product-card__image">
             <div class="product-card__overlay">
               <button class="product-card__quick-view">RÉSZLETEK</button>
             </div>
             <span class="product-card__badge">ÚJ</span>
           </div>
           <div class="product-card__info">
-            <h3 class="product-card__name">HAPPYMOOD</h3>
+            <h3 class="product-card__name">HAPPYMOOD TEE</h3>
             <p class="product-card__price">12 990 Ft</p>
             <div class="product-card__sizes">
               <span class="product-card__size">S</span>
@@ -750,6 +804,32 @@
           <h3 class="cart-drawer__success-title">Köszönjük a rendelést!</h3>
           <p class="cart-drawer__success-text">A rendelést sikeresen rögzítettük. Küldtünk egy visszaigazoló emailt a megadott email címre a rendelés részleteivel.</p>
           <button class="cart-drawer__checkout-btn" id="closeSuccessBtn" style="margin-top: 2rem;">VÁSÁRLÁS FOLYTATÁSA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Discount Modal -->
+  <div class="promo-modal" id="promoModal">
+    <div class="promo-modal__backdrop" id="promoBackdrop"></div>
+    <div class="promo-modal__content">
+      <button class="promo-modal__close" id="promoClose" aria-label="Bezárás">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="promo-modal__inner">
+        <span class="promo-modal__badge">KÜLÖNLEGES AJÁNLAT</span>
+        <h2 class="promo-modal__title">10% KEDVEZMÉNY</h2>
+        <p class="promo-modal__text">Iratkozz fel a hírlevelünkre, és küldünk egy 10%-os kedvezményre jogosító kuponkódot az első vásárlásodhoz!</p>
+        
+        <form class="promo-modal__form" id="promoForm">
+          <input type="email" id="promoEmail" required placeholder="Add meg az email címed" class="promo-modal__input">
+          <button type="submit" class="promo-modal__submit-btn">KÉREM A KEDVEZMÉNYT</button>
+        </form>
+        
+        <div class="promo-modal__success-msg" id="promoSuccessMsg">
+          <p class="promo-modal__code-title">KÖSZÖNJÜK! A KUPONKÓDOD:</p>
+          <div class="promo-modal__code">DUALMOOD10</div>
+          <p class="promo-modal__code-note">Másold ki és használd a fizetésnél!</p>
         </div>
       </div>
     </div>
